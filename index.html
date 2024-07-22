@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Звездное небо</title>
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="settingAndControlContainer">
+            <section class="settingsContainer">
+                <h2>Настройки симуляции</h2>
+                <!-- <button class="btn showSettingBtn" id="showSettingBtn">Скрыть настройки</button> -->
+                <section class="fieldSettingsInputs pad-sect">
+                    <div class="inputTextContainer">
+                        <span>Ширина окна</span>
+                        <input type="number" class="inputText" placeholder="250" id="fieldWidth">
+                    </div>
+                    <div class="inputTextContainer">
+                        <span>Высота окна</span>
+                        <input type="number" class="inputText" placeholder="250" id="fieldHeight">
+                    </div>
+                    <button class="btn" id="confirmFieldSettingsBtn">Применить</button>
+                </section>
+                <section class="colorPaletteSelect pad-sect">
+                    <span>Палитра цветов</span>
+                    <select id="colorPaletteSelect">
+                        <option value="1">Базовые цвета</option>
+                        <option value="2">Черно-белый режим</option>
+                        <option value="3">Много цветов</option>
+                    </select>
+                </section>
+                <section class="starSettingsInputs pad-sect">
+                    <div class="inputTextContainer">
+                        <span>Ширина звезды</span>
+                        <input type="number" class="inputText" placeholder="2" id="starWidth">
+                    </div>
+                    <div class="inputTextContainer">
+                        <span>Высота звезды</span>
+                        <input type="number" class="inputText" placeholder="2" id="starHeight">
+                    </div>
+                    <button class="btn" id="confirmStarSettingsBtn">Применить</button>
+                </section>
+            </section>
+            <hr>
+            <section class="simulationControlContainer">
+                <h2>Управление симуляцией</h2>
+                <section class="simulationControlBtns pad-sect">
+                    <button class="btn" id="startSimulationBtn">Запустить симуляцию</button>
+                    <button class="btn" id="pauseSimulationBtn">Остановить симуляцию</button>
+                    <button class="btn" id="resetSimulationBtn">Сбросить симуляцию</button>
+                </section>
+                <section class="simulationControlSpeedBtns pad-sect">
+                    <span>Скорость симуляции</span>
+                    <div>
+                        <button class="btn controlSpeedBtn">0.1x</button>
+                        <button class="btn controlSpeedBtn">0.5x</button>
+                        <button class="btn controlSpeedBtn">1x</button>
+                        <button class="btn controlSpeedBtn">2x</button>
+                    </div>
+                    <div>
+                        <button class="btn controlSpeedBtn">3x</button>
+                        <button class="btn controlSpeedBtn">5x</button>
+                        <button class="btn controlSpeedBtn">10x</button>
+                        <button class="btn controlSpeedBtn">50x</button>
+                    </div>
+                </section>
+            </section>
+            <hr>
+            <section class="statisticsContainer">
+                <h2>Статистика</h2>
+            </section>
+        </div>
+        <div class="canvasContainer">
+            <canvas id="canvas" height="500" width="500"></canvas>
+        </div>
+    </div>
+</body>
+
+</html>
